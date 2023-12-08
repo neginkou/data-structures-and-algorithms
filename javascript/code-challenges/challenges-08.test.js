@@ -142,14 +142,11 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  for (const ingredient of recipe.ingredients) {
-    const firstSpaceIndex = ingredient.indexOf(' ');
-    const foodItem = ingredient.slice(firstSpaceIndex + 1);
-
-    result.push(foodItem);
-  }
-
-  return result;
+  recipe.ingredients.forEach((ingredient) => {
+    let withoutAmount = ingredient.slice(ingredient.indexOf(' ') + 1);
+    let withoutUnits = withoutAmount.slice(withoutAmount.indexOf(' ') + 1);
+    result.push(withoutUnits);
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
