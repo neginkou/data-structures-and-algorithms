@@ -5,6 +5,7 @@
 - [Arry Reverse](python/docs/array-reverse/README.md)
 - [insertShiftArray](python/docs/array-insert-shift/README.md)
 - [BinarySearch](python/docs/array-binary-search/README.md)
+- [ArrayMatrixSum](python/docs/array-matrix-sum/README.md)
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/2-code-challenges), in the Code 301 Setup Guide.
 
