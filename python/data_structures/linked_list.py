@@ -70,6 +70,25 @@ class LinkedList:
         new_node.next = current.next
         current.next = new_node
 
+    def kthFromEnd(self, k):
+        if not isinstance(k, int) or k < 0:
+            raise ValueError("k must be a non-negative integer")
+
+        current = self.head
+        length = 0
+        while current:
+            length += 1
+            current = current.next
+
+        if k >= length:
+            raise TargetError("k is out of range")
+
+        current = self.head
+        for _ in range(length - k - 1):
+            current = current.next
+
+        return current.value
+
 
 
 class TargetError(Exception):
