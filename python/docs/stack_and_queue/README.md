@@ -2,8 +2,7 @@
 
 ## Stacks and Queues
 
-
-## Approach & Efficiency
+### Approach & Efficiency
 
 The approach for implementing the Queue and Stack data structures involves using a linked list.
 
