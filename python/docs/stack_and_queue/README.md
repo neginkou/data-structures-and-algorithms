@@ -15,6 +15,6 @@ Checking if they are empty is an O(1) operation.
 
 ## Solution
 
-[queue](data_structures/queue.py)
+[queue](/python/data_structures/queue.py)
 
-[stack](data_structures/stack.py)
+[stack](/python/data_structures/stack.py)
