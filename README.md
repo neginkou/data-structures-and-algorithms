@@ -6,6 +6,10 @@
 - [insertShiftArray](python/docs/array-insert-shift/README.md)
 - [BinarySearch](python/docs/array-binary-search/README.md)
 - [ArrayMatrixSum](python/docs/array-matrix-sum/README.md)
+- [LinkedListInsertions](python/docs/linked_list_insertions/README.md)
+- [linkedlistkth](python/docs/linked_list_kth/README.md)
+- [ziplinkedlist](python/docs/linked_list_zip/README.md)
+- [stack_and_queue](python/docs/stack_and_queue/README.md)
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/2-code-challenges), in the Code 301 Setup Guide.
 
