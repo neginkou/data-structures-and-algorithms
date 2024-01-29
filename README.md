@@ -13,6 +13,7 @@
 - [stack_queue_pseudo](python/docs/stack_queue_pseudo/README.md)
 - [stack_queue_animal_shelter](python/docs/stack_queue_animal_shelter/README.md)
 - [stack_queue_brackets](python/docs/stack_queue_brackets/README.md)
+- [trees](python/docs/trees/README.md)
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/2-code-challenges), in the Code 301 Setup Guide.
 
