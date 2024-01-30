@@ -15,6 +15,7 @@
 - [stack_queue_brackets](python/docs/stack_queue_brackets/README.md)
 - [trees](python/docs/trees/README.md)
 - [tree_max](python/docs/tree_max/README.md)
+- [tree_breadth_first](python/docs/tree_breadth_first/README.md)
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/2-code-challenges), in the Code 301 Setup Guide.
 
