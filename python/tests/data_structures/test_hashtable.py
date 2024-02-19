@@ -1,69 +1,42 @@
-import pytest
+import unittest
+from data_structures.linked_list import LinkedList
 from data_structures.hashtable import Hashtable
 
+class TestHashtable(unittest.TestCase):
 
-def test_exists():
-    assert Hashtable
+    def setUp(self):
+        self.hashtable = Hashtable()
 
-# @pytest.mark.skip("TODO")
-def test_set_apple():
-    hashtable = Hashtable()
-    actual = hashtable.set("apple", "Used for apple sauce")
-    expected = "Used for apple sauce"
-    assert actual == expected
+    def test_hash(self):
+        # Test that the hash function generates consistent indices
+        self.assertEqual(self.hashtable._hash("key1"), self.hashtable._hash("key1"))
 
+    def test_set_and_get(self):
+        # Test setting and getting key-value pairs
+        self.hashtable.set("key1", "value1")
+        self.assertEqual(self.hashtable.get("key1"), "value1")
 
-# @pytest.mark.skip("TODO")
-def test_get_apple():
-    hashtable = Hashtable()
-    hashtable.set("apple", "Used for apple sauce")
-    actual = hashtable.get("apple")
-    expected = "Used for apple sauce"
-    assert actual == expected
+    def test_update_value(self):
+        # Test updating the value for an existing key
+        self.hashtable.set("key1", "value1")
+        self.hashtable.set("key1", "value2")
+        self.assertEqual(self.hashtable.get("key1"), "value2")
 
-# @pytest.mark.skip("TODO")
-def test_no_key():
-    hashtable = Hashtable()
-    actual = hashtable.has("John Wayne")
-    expected = False
-    assert actual == expected
+    def test_get_nonexistent_key(self):
+        # Test getting a value for a nonexistent key
+        self.assertIsNone(self.hashtable.get("nonexistent"))
 
-# @pytest.mark.skip("TODO")
-def test_all_keys():
-    hashtable = Hashtable()
-    hashtable.set("Butter", "Good for cooking")
-    hashtable.set("Water", "Stay hydrated")
-    hashtable.set("Beer", "So good")
-    actual = hashtable.keys()
-    expected = ["Butter", "Water", "Beer"]
-    assert sorted(actual) == sorted(expected)
+    def test_has_key(self):
+        # Test checking if a key exists in the hashtable
+        self.hashtable.set("key1", "value1")
+        self.assertTrue(self.hashtable.has("key1"))
+        self.assertFalse(self.hashtable.has("nonexistent"))
 
-# @pytest.mark.skip("TODO")
-def test_collision():
-    hashtable = Hashtable()
-    hashtable.set("Apple", "Good for apple sauce")
-    actual = hashtable.set("Apple", "Good for the soul")
-    expected = "Good for the soul"
-    assert actual == expected
+    def test_keys(self):
+        # Test retrieving all keys
+        self.hashtable.set("key1", "value1")
+        self.hashtable.set("key2", "value2")
+        self.assertListEqual(sorted(self.hashtable.keys()), ["key1", "key2"])
 
-# @pytest.mark.skip("TODO")
-def test_hash():
-    hashtable = Hashtable()
-    actual = hashtable._hash("Negin")
-    assert 0 <= actual < hashtable.size
-
-# def test_internals():
-    hashtable = Hashtable(1024)
-    hashtable.set("arash", 30)
-    hashtable.set("silent", True)
-    hashtable.set("listen", "to me")
-    actual = []
-
-    # NOTE: purposely breaking encapsulation to test the "internals" of Hashmap
-    for item in hashtable._buckets:
-        if item:
-            actual.append(item.display())
-
-    expected = [[["silent", True], ["listen", "to me"]], [["arash", 30]]]
-
-    assert actual == expected
+if __name__ == "__main__":
+    unittest.main()

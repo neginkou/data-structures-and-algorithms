@@ -52,6 +52,7 @@ class LinkedList:
             self.insert(value)
             return
         current = self.head
+        target = target  # Define the "target" variable
         while current.next and current.next.value != target:
             current = current.next
         if current.next is None:
