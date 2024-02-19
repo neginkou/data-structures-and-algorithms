@@ -17,6 +17,7 @@
 - [tree_max](python/docs/tree_max/README.md)
 - [tree_breadth_first](python/docs/tree_breadth_first/README.md)
 - [tree_fizz_buzz](python/docs/tree_fizz_buzz/README.md)
+- [hashtable](python/data_structures/hashtable.py)
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/2-code-challenges), in the Code 301 Setup Guide.
 
