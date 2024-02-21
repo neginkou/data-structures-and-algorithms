@@ -19,6 +19,7 @@
 - [tree_fizz_buzz](python/docs/tree_fizz_buzz/README.md)
 - [hashtable](python/docs/hashtable/README.md)
 - [hashtable_repeated_word](python/docs/hashtable_repeated_word/README.md)
+- [tree_intersection](python/docs/hashtable_repeated_word/README.md)
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/2-code-challenges), in the Code 301 Setup Guide.
 
