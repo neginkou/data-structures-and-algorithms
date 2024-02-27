@@ -21,6 +21,7 @@
 - [hashtable_repeated_word](python/docs/hashtable_repeated_word/README.md)
 - [tree_intersection](python/docs/hashtable_repeated_word/README.md)
 - [hashtable_left_join](python/docs/hashtable_left_join/README.md)
+- [breadth-first traversal](python/docs/graph_breadth_first/README.md)
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/2-code-challenges), in the Code 301 Setup Guide.
 
